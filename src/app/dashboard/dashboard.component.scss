@@ -108,7 +108,7 @@ nav-item:hover {
   top: 0;
   // display: contents;
   background-attachment: fixed;
-  position: static;
+  position: sticky;
 }
 
 .bg-image {
@@ -125,7 +125,7 @@ nav-item:hover {
 
 .right-contents {
   margin-left: 49%;
-  margin-top: -42%;
+  margin-top: -90%;
   padding: 4%;
   // background-attachment: fixed;
   // width: 50%;
