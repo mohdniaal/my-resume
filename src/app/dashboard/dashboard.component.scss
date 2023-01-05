@@ -6,11 +6,39 @@ body {
 
 .dash {
   background-color: rgb(62, 61, 61);
-  position: relative;
+  position: absolute;
+}
+
+.nav-bar {
+  position: fixed !important;
+  display: flex;
+  background-color: grey;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 700px;
+  border-radius: 35px;
+  opacity: 0.8;
+  background-attachment: fixed;
+  z-index: 100;
+
+}
+
+
+.nav-bar div:first-child {
+  flex: 1;
+}
+
+.nav-btn {
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar {
   position: fixed;
+  display: flex;
+  align-items: center;
   right: 20%;
   left: 20%;
   top: 0;
@@ -19,10 +47,12 @@ body {
   padding: 10px;
   height: 50px !important;
   border-radius: 35px;
+  background-color: grey;
   // background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 1.5;
   margin-top: 20px;
   // flex-wrap: wrap;
+  display: flex
 }
 
 
@@ -30,6 +60,8 @@ body {
   cursor: pointer;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+  // position: sticky;
+  top: 12px;
 }
 
 nav-item:hover {
@@ -50,15 +82,18 @@ nav-item:hover {
 .dropbtn {
   background-color: rgb(128, 128, 128);
   color: white;
-  // padding: 4px;
-  font-size: 16px;
+  padding: 1px;
+  font-size: 15px;
   border: none;
-  margin-top: 14px;
+  margin-top: 13.5px;
+
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 7px;
+
 }
 
 .dropdown-content {
@@ -109,10 +144,13 @@ nav-item:hover {
 
 .bg-image {
   display: flex;
-  // align-items: center;
   justify-content: center;
   background-attachment: fixed;
   background-position: left;
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  background-size: contain;
 }
 
 .dash-contents {
@@ -176,4 +214,71 @@ nav-item:hover {
   scroll-behavior: smooth;
   // margin-top: 100%;
   // padding-bottom: 25%;
+}
+
+
+
+// @media only screen and (max-width:700px) {
+//   navbar{
+//     width: 100%;
+//     background: none;
+//     position: absolute;
+//     top:75px;
+//     right: 0;
+//     z-index: 2;
+//   }
+// }
+
+
+// @media only screen and (max-width:700px) {
+//   navbar {
+//     width: 100%;
+//     background: none;
+//     position: relative;
+//     top: 75px;
+//     right: 0;
+//     z-index: 2;
+
+//   }
+// }
+
+@media screen and (max-width: 1000px) {
+  // .navbar {
+  //   width: 70%;
+  //   position: absolute;
+  //   top: 5px;
+  //   right: 0;
+  //   z-index: 1;
+  //   padding: 2%;
+  //   justify-content: center;
+  //   display: flex;
+  //   position: absolute;
+  //   display: flex;
+  //   float: left;
+  // }
+
+  .right-contents {
+    // margin-top: -1170px;  
+    position: relative;
+    top: -280px;
+    padding: 20px;
+
+  }
+
+  .nav-bar {
+    width: 500;
+    top: 17px;
+    padding: 0.5%;
+    position: fixed;
+  }
+
+  .nav-btn {
+    padding: 17px;
+  }
+
+  .dropdown {
+    top: -3px
+  }
+
+
 }
