@@ -12,5 +12,8 @@ import {
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
-
+  refresh(): void {
+    window.location.reload();
+  }
 }
+

@@ -9,7 +9,8 @@ body {
 
 .dash {
   // background-color: rgb(62, 61, 61);
-  background-color: rgb(236, 232, 232);
+  // background-color: rgb(236, 232, 232);
+  background-color: white;
   position: absolute;
   font-family: 'Poppins', sans-serif;
 
@@ -135,6 +136,7 @@ nav-item:hover {
 .dropdown-content a:hover {
   background-color: #ddd;
   opacity: 1;
+  border-radius: 7px;
 
 }
 
@@ -142,6 +144,7 @@ nav-item:hover {
   display: block;
   background-color: grey;
   opacity: 1;
+  
 }
 
 .dropdown:hover .dropbtn {
@@ -307,6 +310,10 @@ nav-item:hover {
     top: -3px
   }
 
+}
+.card{
+  border-radius: 5px;
+  background-color: rgb(227, 224, 224);
 }
 
 // wave animation
